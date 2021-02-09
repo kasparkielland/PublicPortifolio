@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/kaspar/OneDrive - Universitetet i Agder/Semester 1/DAT-113/hand-ins/hand-in_5_2/main.c
+stdio.h
+-
+student.h
+/Users/kaspar/OneDrive - Universitetet i Agder/Semester 1/DAT-113/hand-ins/hand-in_5_2/student.h
+
+/Users/kaspar/OneDrive - Universitetet i Agder/Semester 1/DAT-113/hand-ins/hand-in_5_2/student.c
+stdio.h
+-
+string.h
+-
+student.h
+/Users/kaspar/OneDrive - Universitetet i Agder/Semester 1/DAT-113/hand-ins/hand-in_5_2/student.h
+
+/Users/kaspar/OneDrive - Universitetet i Agder/Semester 1/DAT-113/hand-ins/hand-in_5_2/student.h
+

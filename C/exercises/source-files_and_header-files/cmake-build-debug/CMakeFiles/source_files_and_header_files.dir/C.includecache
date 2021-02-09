@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/kaspar/DAT113/exercises/source-files_and_header-files/main.c
+stdio.h
+-
+memory.h
+-
+student.h
+/Users/kaspar/DAT113/exercises/source-files_and_header-files/student.h
+
+/Users/kaspar/DAT113/exercises/source-files_and_header-files/student.c
+stdio.h
+-
+student.h
+/Users/kaspar/DAT113/exercises/source-files_and_header-files/student.h
+
+/Users/kaspar/DAT113/exercises/source-files_and_header-files/student.h
+

@@ -1,0 +1,3 @@
+/Users/kaspar/DAT113/exercises/exam/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/kaspar/DAT113/exercises/exam/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/kaspar/DAT113/exercises/exam/cmake-build-debug/CMakeFiles/exam.dir
