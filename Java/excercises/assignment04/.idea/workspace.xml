@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="538033ab-d1a7-4942-b8fc-b9e20debb200" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../DAT112/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DAT112/Hand-in_3/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DAT112/Hand-in_3/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DAT112/Hand-in_3/lib/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DAT112/Hand-in_3/platformio.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DAT112/Hand-in_3/src/Hand-in_3.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment05/.idea/libraries/twitter4j_async_4_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment05/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment05/Assignment05.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment05/Assignment05.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment05/out/production/Assignment05/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment05/out/production/Assignment05/GUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment05/src/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment05/src/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Snake_YouTube/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Snake_YouTube/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignement03.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignement03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignement03/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignement03/src/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignement03/src/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment01/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment01/src/Deloppgave_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment01/src/Deloppgave_5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment02_03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment02_03/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/assignment04/Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assignment04/Token.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment06/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment01/.idea/assignment01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment01/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment01/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment01/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment01/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment01/assignment01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment01/out/production/assignment01/klassenavn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment01/src/Deloppgave_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment01/src/Deloppgave_2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment01/src/Deloppgave_3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment01/src/Deloppgave_4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment01/src/Deloppgave_5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_01/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_01/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_01/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_01/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_01/assignment02_01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_01/out/production/assignment02/Funksjoner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_01/out/production/assignment02/Runner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_01/out/production/assignment02_01/Funksjoner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_01/out/production/assignment02_01/Runner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_01/src/Funksjoner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_01/src/Runner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_02/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_02/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_02/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_02/assignment02_02.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_02/out/production/assignment02_02/Funksjoner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_02/out/production/assignment02_02/Runner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_02/src/Funksjoner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_02/src/Runner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_03/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_03/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_03/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_03/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_03/assignment02_03.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_03/out/production/assignment02_03/Funksjoner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_03/out/production/assignment02_03/Runner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_03/src/Funksjoner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/assignment02_03/src/Runner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../project WestWorld - all/westworld/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../project WestWorld - all/westworld/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../project WestWorld - all/westworld/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../project WestWorld - all/westworld/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../project WestWorld - all/westworld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../project WestWorld - all/westworld/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../project WestWorld - all/westworld/out/production/westworld/AI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../project WestWorld - all/westworld/out/production/westworld/DrawCanvas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../project WestWorld - all/westworld/out/production/westworld/controller$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../project WestWorld - all/westworld/out/production/westworld/controller$GameState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../project WestWorld - all/westworld/out/production/westworld/controller$Seed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../project WestWorld - all/westworld/out/production/westworld/controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../project WestWorld - all/westworld/out/production/westworld/model.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../project WestWorld - all/westworld/out/production/westworld/view$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../project WestWorld - all/westworld/out/production/westworld/view.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../project WestWorld - all/westworld/src/AI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../project WestWorld - all/westworld/src/controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../project WestWorld - all/westworld/src/model.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../project WestWorld - all/westworld/src/view.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../project WestWorld - all/westworld/westworld.iml" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/assignment04$Runner.coverage" NAME="Runner Coverage Results" MODIFIED="1519912988526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.48523542">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Runner.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+                  <folding>
+                    <element signature="e#57#58#0" expanded="true" />
+                    <element signature="e#90#91#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Point.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/GUI.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Token.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="345">
+                  <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/BaseGraphic.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="14" selection-start-line="14" selection-end-line="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Snake.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="660">
+                  <caret line="44" column="63" selection-start-line="44" selection-start-column="63" selection-end-line="44" selection-end-column="63" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Point</find>
+      <find>token</find>
+      <find>paint</find>
+      <find>cha</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Point.java" />
+        <option value="$PROJECT_DIR$/src/BaseGraphic.java" />
+        <option value="$PROJECT_DIR$/src/Runner.java" />
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        <option value="$PROJECT_DIR$/src/Snake.java" />
+        <option value="$PROJECT_DIR$/src/GUI.java" />
+        <option value="$PROJECT_DIR$/src/Token.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code style issuesJava</id>
+          </State>
+          <State>
+            <id>Control flow issuesJava</id>
+          </State>
+          <State>
+            <id>Data flow issuesJava</id>
+          </State>
+          <State>
+            <id>Declaration redundancyJava</id>
+          </State>
+          <State>
+            <id>Error handlingJava</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>ImportsJava</id>
+          </State>
+          <State>
+            <id>Inheritance issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>Kotlin Android</id>
+          </State>
+          <State>
+            <id>Other problemsKotlin</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>Properties Files</id>
+          </State>
+          <State>
+            <id>Redundant constructsKotlin</id>
+          </State>
+          <State>
+            <id>Style issuesKotlin</id>
+          </State>
+          <State>
+            <id>StyleGroovy</id>
+          </State>
+          <State>
+            <id>Verbose or redundant code constructsJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>RedundantIf</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="assignment04" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment04" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment04" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment04" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Runner" />
+      <module name="assignment04" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Runner" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="538033ab-d1a7-4942-b8fc-b9e20debb200" name="Default" comment="" />
+      <created>1519205809212</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1519205809212</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.06509299" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32941177" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32941177" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3298611" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="3345" column="16" selection-start-line="3345" selection-start-column="16" selection-end-line="3345" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/RepaintManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="1879" selection-start-line="1879" selection-end-line="1879" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/event/InvocationEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="312" selection-start-line="312" selection-end-line="312" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/security/ProtectionDomain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/EventQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="733" selection-start-line="733" selection-end-line="733" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/EventDispatchThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="3912" column="16" selection-start-line="3912" selection-start-column="16" selection-end-line="3912" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/com/apple/laf/AquaSpinnerUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="236" column="28" selection-start-line="236" selection-start-column="28" selection-end-line="236" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding>
+            <element signature="e#57#58#0" expanded="true" />
+            <element signature="e#90#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BaseGraphic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Snake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="63" selection-start-line="44" selection-start-column="63" selection-end-line="44" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
