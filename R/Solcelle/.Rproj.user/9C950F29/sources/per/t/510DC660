@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1552397882856.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "63475900",
+    "id" : "510DC660",
+    "lastKnownWriteTime" : 1556377054,
+    "last_content_update" : 1556377054817,
+    "path" : "~/OneDrive - Universitetet i Agder/Semester 4/MA-171 [Statestikk]/Gruppeprosjekt - Solcelle/Solcelle - R/Solcelle/main.R",
+    "project_path" : "main.R",
+    "properties" : {
+        "cursorPosition" : "194,21",
+        "docOutlineVisible" : "0",
+        "scrollLine" : "188",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
