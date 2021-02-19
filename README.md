@@ -3,7 +3,7 @@
 ## Starred projects
 The following projects are my proudest and should get an extra acknowledgement
 
-* Java: (TicTacToe with minmax-"AI")(https://github.com/kasparkielland/PublicPortifolio/blob/main/Java/project%20westworld/src/AI.java)
+* Java: [TicTacToe with minmax-"AI"](https://github.com/kasparkielland/PublicPortifolio/blob/main/Java/project%20westworld/src/AI.java)
   * Class held by Morten Goodwin; one of the leading experts in digitization and artificial intelligence in Norway
 * Python: [Tesselation](https://github.com/kasparkielland/PublicPortifolio/blob/main/Python/Assignment%201/Solution/tessellation.py)
   * My submition was among top 10 in a class of 350 students
