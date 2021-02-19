@@ -1,0 +1,413 @@
+data <- read.csv("Portfolio\ 2\ data.csv", header = TRUE)
+# data <- read.csv(file.choose(), header = TRUE)
+
+install.packages("ggpubr", "tidyverse")
+library("ggpubr")
+library("gridExtra")
+library("dplyr")
+library("tidyverse")
+
+attach(data)
+
+
+# Summary
+summary(Attrition)
+summary(Degree_Type)
+summary(Achieved_Credit_Points)
+summary(Attendance_Type)
+summary(Age)
+summary(Failed_Credit_Points)
+summary(International_student)
+summary(Gender)
+summary(GPA)
+summary(OP_Score)
+summary(Socio_Economic_Status)
+summary(Teaching._Period_Admitted)
+summary(Faculty)
+
+
+# Histogram
+# hist(Attrition)
+# hist(Degree_Type)
+hist(Achieved_Credit_Points)
+# hist(Attendance_Type)
+hist(Age)
+hist(Failed_Credit_Points)
+# hist(International_student)
+# hist(Gender)
+hist(GPA)
+hist(OP_Score)
+# hist(Socio_Economic_Status)
+# hist(Teaching._Period_Admitted)
+# hist(Faculty)
+
+#### Table ####
+table(Attrition)                  # NA
+table(Degree_Type)                # NA
+# table(Achieved_Credit_Points)     # 92.96941
+table(Attendance_Type)            # NA
+# table(Age)                        # 22.74157
+# table(Failed_Credit_Points)       # 8.032941
+table(International_student)      # NA
+table(Gender)                     # NA
+# table(GPA)                        # 4.549467
+# table(OP_Score)                   # 10.73529
+table(Socio_Economic_Status)      # NA
+table(Teaching._Period_Admitted)  # NA
+table(Faculty)                    # NA
+
+#----- Task 1 -----
+#### GPA ####
+density_GPA <- data %>%
+  ggplot( aes(x=GPA))+
+  xlab("GPA") + 
+  ylab("Density") +
+  geom_density(fill="#13BFC4", 
+               color="#e9ecef", 
+               alpha=0.9) +
+  geom_vline(xintercept = mean(GPA), 
+             color="#13BFC4") +
+  geom_text(aes(round(mean(GPA), 2), 0.3, 
+                label = paste("Mean: ", round(mean(GPA), 2)), 
+                hjust = 1.5), 
+            size = 4, 
+            color = "#13BFC4") +
+  theme_minimal()
+density_GPA <- density_GPA + 
+  ggtitle("GPA")
+
+#### OP score ####
+density_OP_score <- data %>%
+  ggplot( aes(x=OP_Score)) +
+  xlab("OP score") + 
+  ylab("Density") +
+  geom_density(fill="#F7766D", 
+               color="#e9ecef", 
+               alpha=0.9) +
+  geom_vline(xintercept = mean(OP_Score), 
+             color="#F7766D") +
+  geom_text(aes(round(mean(OP_Score), 2), 0.06, 
+                label = paste("Mean: ", round(mean(OP_Score), 2)), 
+                hjust = -0.2), 
+            size = 4, color = "#F7766D") +
+  theme_minimal()
+density_OP_score <- density_OP_score + 
+  ggtitle("OP Score")
+
+#### Achived credit points ####
+histogram_Achieved_Credit_Points <- data %>%
+  ggplot(aes(x=Achieved_Credit_Points)) +
+  xlab("Achieved credit points") + 
+  ylab("Number of occurences") +
+  geom_histogram(fill="#02BC38", 
+                 color="#e9ecef", 
+                 alpha=0.9) +
+  geom_vline(xintercept = mean(Achieved_Credit_Points), 
+             color="#02BC38") +
+  geom_text(aes(round(mean(Achieved_Credit_Points), 2), 1000, 
+                label = paste("Mean: ", round(mean(Achieved_Credit_Points), 2)), 
+                hjust = -0.1), 
+            size = 4, 
+            color = "#02BC38") +
+  theme_minimal()
+histogram_Achieved_Credit_Points <- histogram_Achieved_Credit_Points + 
+  ggtitle("Achived Credit Points")
+
+#### Failed credit points ####
+histogram_Failed_Credit_Points <- data %>%
+  ggplot( aes(x=Failed_Credit_Points)) +
+  xlab("Failed credit points") + 
+  ylab("Number of occurences") +
+  geom_histogram(fill="#F7766D", 
+                 color="#e9ecef", 
+                 alpha=0.9) +
+  geom_vline(xintercept = mean(Failed_Credit_Points), 
+             color="#F7766D") +
+  geom_text(aes(round(mean(Failed_Credit_Points), 2), 1750, 
+                label = paste("Mean: ", round(mean(Failed_Credit_Points), 2)), 
+                hjust = -0.1), 
+            size = 4, color = "#F7766D") +
+  theme_minimal()
+histogram_Failed_Credit_Points <- histogram_Failed_Credit_Points + 
+  ggtitle("Failed Credit Points")
+
+#### Age ####
+density_Age <- data %>%
+  ggplot( aes(x=Age)) +
+  coord_cartesian(xlim = c(min(Age), 
+                           max(Age)), 
+                  expand = FALSE) +
+  xlab("Age") + 
+  ylab("Density") +
+  geom_density(fill="#6599FF", 
+               color="#e9ecef", 
+               alpha=0.9) +
+  geom_vline(xintercept = mean(Age), 
+             color="#6599FF") +
+  geom_text(aes(round(mean(Age), 0), 0.25, 
+                label = paste("Mean: ", round(mean(Age), 0)), 
+                hjust = -0.1, 
+                vjust = 1.5), 
+            size = 4, 
+            color = "#6599FF") +
+  theme_minimal()
+density_Age <- density_Age + 
+  ggtitle("Age")
+
+#### Attrition Distrubiation ####
+df_Attrition <- data %>%
+  group_by(Attrition) %>%
+  summarise(counts = n())
+# Updates df with percantage distrubiation and a vector with the cumulative sum as element
+df_Attrition <- df_Attrition %>%
+  arrange(desc(Attrition)) %>%
+  mutate(prop = round(counts/sum(counts), 3), 
+         lab.ypos = cumsum(prop) - 0.5*prop)
+# Creates pie chart for distrubiation
+pie_chart_Attrition <- ggplot(df_Attrition, 
+                              aes(x = "", 
+                                  y = prop, 
+                                  fill = Attrition)) +
+  geom_bar(width = 1,
+           stat = "identity", 
+           color = "transparent") +
+  geom_text(aes(y = lab.ypos, 
+                label = prop*100), 
+            color = "white") +
+  coord_polar("y", start = 0) +
+  theme_void()
+pie_chart_Attrition <- pie_chart_Attrition + 
+  labs(fill = "Attrition") + 
+  ggtitle("Attrition")
+
+#### Degree_Type Distrubiation ####
+df_Degree_Type <- data %>%
+  group_by(Degree_Type) %>%
+  summarise(counts = n())
+# Updates df with percantage distrubiation and a vector with the cumulative sum as element
+df_Degree_Type <- df_Degree_Type %>%
+  arrange(desc(Degree_Type)) %>%
+  mutate(prop = round(counts/sum(counts), 3), 
+         lab.ypos = cumsum(prop) - 0.5*prop)
+# Creates pie chart for distrubiation
+pie_chart_Degree_Type <- ggplot(df_Degree_Type, 
+                                aes(x = "", 
+                                    y = prop, 
+                                    fill = Degree_Type)) +
+  geom_bar(width = 1, 
+           stat = "identity", 
+           color = "transparent") +
+  geom_text(aes(y = lab.ypos, 
+                label = prop*100), 
+            color = "white") +
+  coord_polar("y", start = 0) +
+  theme_void()
+pie_chart_Degree_Type <- pie_chart_Degree_Type + 
+  labs(fill = "Degree type") + 
+  ggtitle("Degree type")
+
+#### Attendance_Type Distrubiation ####
+df_Attendance_Type <- data %>%
+  group_by(Attendance_Type) %>%
+  summarise(counts = n())
+# Updates df with percantage distrubiation and a vector with the cumulative sum as element
+df_Attendance_Type <- df_Attendance_Type %>%
+  arrange(desc(Attendance_Type)) %>%
+  mutate(prop = round(counts/sum(counts), 3), 
+         lab.ypos = cumsum(prop) - 0.5*prop)
+
+# Creates pie chart for gender distrubiation
+pie_chart_Attendance_Type <- ggplot(df_Attendance_Type, 
+                                    aes(x = "", 
+                                        y = prop, 
+                                        fill = Attendance_Type)) +
+  geom_bar(width = 1, 
+           stat = "identity", 
+           color = "transparent") +
+  geom_text(aes(y = lab.ypos, 
+                label = prop*100), 
+            color = "white") +
+  coord_polar("y", start = 0) +
+  theme_void()
+pie_chart_Attendance_Type <- pie_chart_Attendance_Type + 
+  labs(fill = "Attendance type") + 
+  ggtitle("Attendance type")
+
+#### International_student Distrubiation ####
+df_International_student <- data %>%
+  group_by(International_student) %>%
+  summarise(counts = n())
+# Updates df with percantage distrubiation and a vector with the cumulative sum as element
+df_International_student <- df_International_student %>%
+  arrange(desc(International_student)) %>%
+  mutate(prop = round(counts/sum(counts), 3), 
+         lab.ypos = cumsum(prop) - 0.5*prop)
+# Creates pie chart for gender distrubiation
+pie_chart_International_student <- ggplot(df_International_student, 
+                                          aes(x = "", 
+                                              y = prop, 
+                                              fill = International_student)) +
+  geom_bar(width = 1, 
+           stat = "identity", 
+           color = "transparent") +
+  geom_text(aes(y = lab.ypos, 
+                label = prop*100), 
+            color = "white") +
+  coord_polar("y", start = 0) +
+  theme_void()
+pie_chart_International_student <- pie_chart_International_student + 
+  labs(fill = "International student") + 
+  ggtitle("International student")
+
+#### Gender Distrubiation ####
+df_Gender <- data %>%
+  group_by(Gender) %>%
+  summarise(counts = n())
+# Updates df with percantage distrubiation and a vector with the cumulative sum as element
+df_Gender <- df_Gender %>%
+  arrange(desc(Gender)) %>%
+  mutate(prop = round(counts/sum(counts), 3), 
+         lab.ypos = cumsum(prop) - 0.5*prop)
+# Creates pie chart for distrubiation
+pie_chart_Gender <- ggplot(df_Gender, 
+                           aes(x = "", 
+                               y = prop, 
+                               fill = Gender)) +
+  geom_bar(width = 1, 
+           stat = "identity", 
+           color = "transparent") +
+  geom_text(aes(y = lab.ypos, 
+                label = prop*100), 
+            color = "white") +
+  coord_polar("y", 
+              start = 0) +
+  theme_void()
+pie_chart_Gender <- pie_chart_Gender + 
+  scale_fill_discrete(name = "Gender", 
+                      labels = c("Female", "Male")) + 
+  ggtitle("Gender")
+
+#### Socio_Economic_Status Distrubiation ####
+df_Socio_Economic_Status <- data %>%
+  group_by(Socio_Economic_Status) %>%
+  summarise(counts = n())
+# Updates df with percantage distrubiation and a vector with the cumulative sum as element
+df_Socio_Economic_Status <- df_Socio_Economic_Status %>%
+  arrange(desc(Socio_Economic_Status)) %>%
+  mutate(prop = round(counts/sum(counts), 3), 
+         lab.ypos = cumsum(prop) - 0.5*prop)
+# Creates pie chart for gender distrubiation
+pie_chart_Socio_Economic_Status <- ggplot(df_Socio_Economic_Status, 
+                                          aes(x = "", 
+                                              y = prop, 
+                                              fill = Socio_Economic_Status)) +
+  geom_bar(width = 1, 
+           stat = "identity", 
+           color = "transparent") +
+  geom_text(aes(y = lab.ypos, 
+                label = prop*100), 
+            color = "white") +
+  coord_polar("y", start = 0) +
+  theme_void()
+
+pie_chart_Socio_Economic_Status <- pie_chart_Socio_Economic_Status + 
+  labs(fill = "Socio economic status") + 
+  ggtitle("Socio economic status")
+
+
+#### Teaching._Period_Admitted Distrubiation ####
+df_Teaching._Period_Admitted <- data %>%
+  group_by(Teaching._Period_Admitted) %>%
+  summarise(counts = n())
+# Updates df with percantage distrubiation and a vector with the cumulative sum as element
+df_Teaching._Period_Admitted <- df_Teaching._Period_Admitted %>%
+  arrange(desc(Teaching._Period_Admitted)) %>%
+  mutate(prop = round(counts/sum(counts), 3), 
+         lab.ypos = cumsum(prop) - 0.5*prop)
+# Creates pie chart for gender distrubiation
+pie_chart_Teaching._Period_Admitted <- ggplot(df_Teaching._Period_Admitted, 
+                                              aes(x = "", 
+                                                  y = prop, 
+                                                  fill = Teaching._Period_Admitted)) +
+  geom_bar(width = 1, 
+           stat = "identity", 
+           color = "transparent") +
+  geom_text(aes(y = lab.ypos, 
+                label = prop*100), 
+            color = "white") +
+  coord_polar("y", start = 0) +
+  theme_void()
+pie_chart_Teaching._Period_Admitted <- pie_chart_Teaching._Period_Admitted + 
+  labs(fill = "Teaching period admitted") + 
+  ggtitle("Teaching period admitted")
+
+#### Faculty Distrubiation ####
+df_Faculty <- data %>%
+  group_by(Faculty) %>%
+  summarise(counts = n())
+# Updates df with percantage distrubiation and a vector with the cumulative sum as element
+df_Faculty <- df_Faculty %>%
+  arrange(desc(Faculty)) %>%
+  mutate(prop = round(counts/sum(counts), 3), 
+         lab.ypos = cumsum(prop) - 0.5*prop)
+# Creates pie chart for distrubiation
+pie_chart_Faculty <- ggplot(df_Faculty, 
+                            aes(x = "", 
+                                y = prop, 
+                                fill = Faculty)) +
+  geom_bar(width = 1, 
+           stat = "identity", 
+           color = "transparent") +
+  geom_text(aes(y = lab.ypos, 
+                label = prop*100), 
+            color = "white") +
+  coord_polar("y", start = 0) +
+  theme_void()
+pie_chart_Faculty <- pie_chart_Faculty + 
+  labs(fill = "Faculty") + 
+  ggtitle("Faculty")
+
+#### All charts ####
+combined_charts <- grid.arrange(
+  arrangeGrob(pie_chart_Gender, pie_chart_Attrition, pie_chart_Degree_Type, ncol = 3),
+  arrangeGrob(pie_chart_Teaching._Period_Admitted, pie_chart_Attendance_Type, pie_chart_International_student, ncol = 3),
+  arrangeGrob(pie_chart_Socio_Economic_Status, pie_chart_Faculty, ncol = 2),
+  arrangeGrob(histogram_Achieved_Credit_Points, histogram_Failed_Credit_Points, ncol = 2),
+  arrangeGrob(density_Age, ncol = 1),
+  arrangeGrob(density_OP_score, density_GPA, ncol = 2),
+  nrow = 6)
+
+#----- Task 2 -----
+box_plot_GPA_Gender <- ggplot(data, 
+                              aes(x=Gender, 
+                                  y=GPA, 
+                                  fill=Gender)) +
+  geom_boxplot(alpha=0.8, 
+               fatten = 0,
+               notch = TRUE,
+               varwidth = FALSE) +
+  stat_summary(fun.y=mean, 
+               geom="errorbar", 
+               aes(ymax = ..y.., 
+                   ymin = ..y..),
+               width = 0.75, 
+               size = 1, 
+               linetype = "solid") +
+  theme(legend.position="right",
+        axis.title.x = element_blank(),
+        axis.text.x = element_blank(),
+        axis.ticks.x = element_blank()) +
+  scale_fill_discrete(name = "Gender", 
+                      labels = c("Female", "Male"))
+box_plot_GPA_Gender + 
+  ggtitle("Comparison of average GPA between\nfemale and male students", 
+          subtitle = "The respective mean is represented by the black horizontal line\nThe respective median is reprenseted by the notch") +
+  scale_y_continuous(breaks=seq(0,7,1))
+
+t.test(GPA ~ Gender)
+
+#----- Task 3 -----
+
+  
+
+

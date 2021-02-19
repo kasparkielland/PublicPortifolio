@@ -1,0 +1,7 @@
+"0","# Decision trees use probability to choose how to split, so here we ""seed"" a random number generator so our results are always the same."
+"0","set.seed(1234)"
+"0",""
+"0","# Split the data into 70% training, 30% test: this means we use 70% of the dataset to build our predictive model. We then use the remaining 30% of data as the unseen data (test) in order to evaluate the predictions."
+"0","ind <- sample(2, nrow(iris), replace=TRUE, prob=c(0.7, 0.3))"
+"0","train_data <- iris[ind==1,]"
+"0","test_data <- iris[ind==2,]"

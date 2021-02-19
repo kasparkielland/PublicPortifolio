@@ -1,0 +1,52 @@
+data <- read.csv("Portfolio\ 2\ data.csv", header = TRUE)
+# data <- read.csv(file.choose(), header = TRUE)
+
+attach(data)
+
+# Summary
+summary(Attrition)
+summary(Degree_Type)
+summary(Achieved_Credit_Points)
+summary(Attendance_Type)
+summary(Age)
+summary(Failed_Credit_Points)
+summary(International_student)
+summary(Gender)
+summary(GPA)
+summary(OP_Score)
+summary(Socio_Economic_Status)
+summary(Teaching._Period_Admitted)
+summary(Faculty)
+
+
+# Histogram
+# hist(Attrition)
+# hist(Degree_Type)
+hist(Achieved_Credit_Points)
+# hist(Attendance_Type)
+hist(Age)
+hist(Failed_Credit_Points)
+# hist(International_student)
+# hist(Gender)
+hist(GPA)
+hist(OP_Score)
+# hist(Socio_Economic_Status)
+# hist(Teaching._Period_Admitted)
+# hist(Faculty)
+
+# Table
+table(Attrition)                  # NA
+table(Degree_Type)                # NA
+# table(Achieved_Credit_Points)     # 92.96941
+table(Attendance_Type)            # NA
+# table(Age)                        # 22.74157
+# table(Failed_Credit_Points)       # 8.032941
+table(International_student)      # NA
+table(Gender)                     # NA
+# table(GPA)                        # 4.549467
+# table(OP_Score)                   # 10.73529
+table(Socio_Economic_Status)      # NA
+table(Teaching._Period_Admitted)  # NA
+table(Faculty)                    # NA
+
+boxplot(GPA ~Gender)

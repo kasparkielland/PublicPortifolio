@@ -1,0 +1,5 @@
+"0","library(party)"
+"0","formula <- Species ~ Sepal.Length + Sepal.Width + Petal.Length + Petal.Width"
+"0","#formula <- Species ~ ."
+"0","# the next operation (the creation of the decision tree) would take a long time with more data and more classes, but has no problem with our toy data set"
+"0","iris_ctree <- ctree(formula, data = train_data)"

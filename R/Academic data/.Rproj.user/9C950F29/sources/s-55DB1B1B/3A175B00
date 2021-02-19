@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1566887710519.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3A175B00",
+    "lastKnownWriteTime" : 1568432421,
+    "last_content_update" : 1568434233400,
+    "path" : "~/OneDrive - Universitetet i Agder/Semester 5/CAB220 Fundementals of Data Science/Portfolio 2/CAB_Portfolio-2.R",
+    "project_path" : "CAB_Portfolio-2.R",
+    "properties" : {
+        "cursorPosition" : "409,0",
+        "docOutlineVisible" : "0",
+        "scrollLine" : "385",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

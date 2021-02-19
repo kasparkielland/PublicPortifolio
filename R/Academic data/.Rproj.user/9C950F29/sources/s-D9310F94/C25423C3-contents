@@ -1,0 +1,109 @@
+---
+title: 'CAB220 -- Week 10 Practical on decison tree'
+output:
+  html_notebook: default
+  pdf_document: default
+  html_document: default
+---
+
+###### version 1.0 -- Prof. Yuefeng Li
+
+**Driving question:** *Decision Trees in R for data classification*
+
+---
+
+# Introduction
+In this week lecture we have introduced the concept of data classification: building a predictive model from previously seen/historical data (training data), to then predict the value of a target variable for some unseen data.
+In other words, we do classification to find what _class_ or group some data fits into. This is useful when we have a lot of raw data and we want to segment, find a boundary, or categorise that data. 
+
+In this lab we will use a simple algorithm for performing classification: decision trees. The strength of decision trees is that they scale to the number of classes you are trying to classify (i.e. it is not just a binary classifier, but is a multi-class classification algorithm).
+
+By completing this lab, you will gain an intution of what are the key elements in a classification task, including the type of data required for this, and understand in which situations you would use a decision tree. You also will understand how to use R to create decision trees. This week tutorial provides you with further understanding of the key intuitions behind the decision trees algorithm.
+
+Before we start, let's go ahead and install the required packages for this weeks exercises. To do so, type on your Rstudio shell the following installation commands: `install.packages("party")`, `install.packages("caret")`, `install.packages("e1071")`.
+
+# Exercise 1: Classifying species of iris
+
+![what kind of iris is this?](http://www.publicdomainpictures.net/pictures/20000/velka/siberian-iris.jpg)
+
+You should be already familiar with the iris dataset, as we have seen it in a lecture a couple of weeks ago. Let's however regain familiarity with the dataset by examining how exactly the dataset looks like:
+
+```{r examine the data frame}
+str(iris)
+```
+
+We have a data frame with three classes: setosa, versicolor, and virginica - these are different species of the flower iris. You can read more about the dataset on <a href="https://en.wikipedia.org/wiki/Iris_flower_data_set">its Wikipedia page</a>: do this at home, if you want.
+
+Each class has four features: The sepal length, sepal width, petal length, and petal width. The image below clarifies what these measurements refer to with respect to the iris flower, along with the data distributions for the three classes of irises in the dataset.
+
+![how does an iris look like?](https://sebastianraschka.com/images/blog/2014/intro_supervised_learning/iris_petal_sepal_1.png)
+
+
+
+Now that we know the classes and the variables in the dataset, we aim to predict the class (the species of the iris) of an unseen iris specimen, given the features (sepal length, sepal width, petal length, and petal width). To this aim, we need to first train a classifier (build the predictive model) on the seen data (training data). 
+
+We do this decision trees (note: other classifiers could be used, of course). 
+
+First of all, we divide our data into two groups - the *training* set, and the *test* set. The training data is used to build the tree, and the test data is used to evaluate how well we did. This is a bit of an artificial setting, because we do already know the values of the class we want to predict in our test set (however we will witheald this information from the classifier until we evaluate); while, in real world settings, we do not necessarily know the true label/class of the test (unseen) data. However, this setting is more common than you think: in fact, it allows us to scientifically evaluate the performance of the classifiers, and to compare different classification techniques, or fine tune the parameters of these techniques.
+
+```{r create training and test data}
+# Decision trees use probability to choose how to split, so here we "seed" a random number generator so our results are always the same.
+set.seed(1234)
+
+# Split the data into 70% training, 30% test: this means we use 70% of the dataset to build our predictive model. We then use the remaining 30% of data as the unseen data (test) in order to evaluate the predictions.
+ind <- sample(2, nrow(iris), replace=TRUE, prob=c(0.7, 0.3))
+train_data <- iris[ind==1,]
+test_data <- iris[ind==2,]
+```
+
+Now that we have arranged the datest into training (`train_data`) and test (`test_data`), we proceed to train our decision trees predictive model. To this aim, we use the R function `ctree()` which implements such a classifier algorithm. 
+The `ctree()` function provides some parameters to control how the decision tree is created, however we gloss over these and use the default parameters. If you were concerned with increasing the accuracy of your decision tree, these parameters can be *tuned*, but this is not within the scope of this exercise. (You may want to futher explore this on your own.)
+
+```{r classify iris data}
+library(party)
+formula <- Species ~ Sepal.Length + Sepal.Width + Petal.Length + Petal.Width
+#formula <- Species ~ .
+# the next operation (the creation of the decision tree) would take a long time with more data and more classes, but has no problem with our toy data set
+iris_ctree <- ctree(formula, data = train_data)
+```
+
+The `formula` dataframe above specifies that _Species_ is the *target variable*, and all the other variables are *independent variables*.
+The `ctree()` function builds the decision tree for us. 
+
+Some terminology:
+  - target variable: the variable whose values are to be modeled and predicted by the independent variables
+  - independent variables: the variables that are changed or controlled to test the effects on the target variable
+
+Now that we have constructed our decision tree, let's visualise how it chose to split the independent variables to classify target variables.
+(we do this using the simple `plot()` function - using `ggplot` for this is rather tricky.)
+
+```{r plot iris tree}
+plot(iris_ctree)
+```
+
+The barplot for each terminal (or leaf) node shows the probabilities of an instance falling into the three species. Each non-terminal node shows which criteria is used to split, and the branches display the splitting criteria. For instance, the split criteria for node 1 is petal length. If the petal length at node 1 is <= 1.9, the flower specimen is classified as a setosa iris, otherwise, the algorithm continues to work down the tree.
+
+Analyse the rest of the decision tree and verbalise the decisions that the algorithm has learnt at each step/node.
+
+Next, we are interested to see a summary of the predictions that are made and compare these predictions to the true values recorded for the test data (remember, we did not use these true values for the target variables when learning the model). We show this summary as a table (computed with the `table()`) function, which is also called a confusion matrix: in one dimension of the table (say, the columns) we report the true values for the unseen specimens; in the other dimension (say, the rowa), we report the predicted values. The values in the main diagonal (from top-left to bottom-right) of the table represent the number of correct classification for each class. The off-diagonal values show errors, for example in the case below the algorithm makes 2 errors by classifing speciments of virginica as versicolor. Pretty cool, huh?
+
+```{r view predictions}
+table(predict(iris_ctree, newdata = test_data), test_data$Species)
+```
+
+Note, the same output could have been produced using another function, called `confusionMatrix` (from the `caret` package). The advantage of this function is that not only outputs the confusion matrix (as above) but also some summary evaluation measures like accuracy, sensitivity (also known as recall), specificity (also known as precision) and so on. You may have already heard about this measures (or not): you will learn more about them in IFN 645, IFN 647 and IFN 680 (if you want to learn more before that, just look on wikipedia for a basic explanation).
+
+
+```{r evaulate performance of decision tree}
+library(caret)
+confusionMatrix(predict(iris_ctree, newdata = test_data), test_data$Species)
+```
+
+Sensitivity - true positive rate = TP/(TP+FN)
+Specificity - true negative rate = TN/(TN+FP)
+Pos Pred Value - PPV = TP/(TP+FP)
+neg pred value (NPV) = TN/(TN+FN)
+Balanced Accuracy (ACC) = (TP+TN)/(TP+FP+FN+TN)
+
+See more details at 
+https://en.wikipedia.org/wiki/Sensitivity_and_specificity 

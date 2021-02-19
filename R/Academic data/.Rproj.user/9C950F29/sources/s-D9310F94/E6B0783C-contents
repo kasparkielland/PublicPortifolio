@@ -1,0 +1,82 @@
+---
+title: 'CAB220 -- Week 10 Practical on SVM and kNN'
+output:
+  pdf_document: default
+  html_notebook: default
+  html_document: default
+---
+
+###### version 1.0 -- Prof. Yuefeng Li
+
+**Driving question:** *SVM and kNN in R for data classification*
+
+
+## R Markdown
+
+In this example, we use the glass data from the UCI Repository of Machine
+Learning Databases for SVM classification. The task is to predict the type of a glass
+on basis of its chemical analysis. We start by splitting the data into a train and
+test set:
+
+```{r SVM classification}
+
+#install.packages("e1071")
+#install.packages("mlbench")
+
+library(e1071)
+library(rpart)
+data(Glass, package="mlbench")
+## split data into a train and test set
+index <- 1:nrow(Glass)
+testindex <- sample(index, trunc(length(index)/3))
+testset <- Glass[testindex,]
+trainset <- Glass[-testindex,]
+
+```
+
+We then fit the model and try to predict the test set values:
+
+```{r SVM cont}
+
+## svm
+svm.model <- svm(Type ~ ., data = trainset, cost = 100, gamma = 1)
+svm.pred <- predict(svm.model, testset[,-10])
+
+```
+where, the dependent variable, Type, has column number 10. cost is a general penalizing
+parameter for C-classification and gamma is the radial basis function-specific
+kernel parameter.
+
+A symbolic description of the model to be fitted. Currently only a few formula operators are supported, including '~', '.', ':', '+', and '-'.
+
+A cross-tabulation of the true versus the predicted values yields:
+
+```{R SVM confusion matrix}
+
+## compute svm confusion matrix
+tab1 <- table(pred = svm.pred, true = testset[,10])
+
+library(caret)
+confusionMatrix(tab1)
+```
+
+Read the following example to understand how to use a knn classification
+
+```{r knn}
+library(kknn)
+data(iris)
+m <- dim(iris)[1]
+val <- sample(1:m, size = round(m/3), replace = FALSE,
+prob = rep(1/m, m))
+iris.learn <- iris[-val,] #training set (rest 100 rows)
+iris.valid <- iris[val,]  # testing set (50 rows)
+iris.kknn <- kknn(Species~., iris.learn, iris.valid, distance = 1, kernel = "triangular")
+#iris.kknn <- kknn(Species~., iris.learn, iris.valid, distance = 1, kernel = "optimal")
+summary(iris.kknn)
+fit <- fitted(iris.kknn)
+tab2<-table(iris.valid$Species, fit)
+pcol <- as.character(as.numeric(iris.valid$Species))
+pairs(iris.valid[1:4], pch = pcol, col = c("green3", "red")[(iris.valid$Species != fit)+1])
+
+```
+
