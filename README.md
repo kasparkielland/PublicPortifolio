@@ -1,14 +1,14 @@
 # PublicPortifolio
 
 ## Starred projects
-The following projects are my proudest and should get an extra acknowledgement
+The following projects are my most impressive and are therefore highlighted in this section
 
 * Java: [Project WestWorld; a TicTacToe with minmax-"AI"](https://github.com/kasparkielland/PublicPortifolio/blob/main/Java/project%20westworld/src/AI.java)
-  * Class held by Morten Goodwin; one of the leading experts in digitization and artificial intelligence in Norway
+  * Class held by Morten Goodwin, a leading expert on digitization and artificial intelligence
 * Python: [Tesselation](https://github.com/kasparkielland/PublicPortifolio/blob/main/Python/Assignment%201/Solution/tessellation.py)
-  * My submition was among top 10 in a class of 350 students
+  * My submission was among the top 10 in a class of 350 students
 * Python: [NewsAggregator](https://github.com/kasparkielland/PublicPortifolio/blob/main/Python/Assignment%202/Solution/news_aggregator.py)
-  * My submition was among top 15 in a class of 350 students
+  * My submission was among the top 15 in a class of 350 students
 
 ## File-Tree
 ```
