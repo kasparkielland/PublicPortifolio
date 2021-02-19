@@ -2,9 +2,9 @@
 
 ## Starred projects
 The following projects are my proudest and should get an extra acknowledgement
-[Java: TicTacToe with minmax-"AI"](../Java/project\ westworld)
-[Python: Tesselation (My submition was among top 10 in a class of 350 students)](../Python/Assignment\ 1)
-[Python: NewsAggregator (My submition was among top 15 in a class of 350 students)](../Python/Assignment\ 2)
+  *[Java: TicTacToe with minmax-"AI"](PublicPortifolio/Java/project\ westworld)
+  *[Python: Tesselation (My submition was among top 10 in a class of 350 students)](PublicPortifolio/Python/Assignment\ 1)
+  *[Python: NewsAggregator (My submition was among top 15 in a class of 350 students)](PublicPortifolio/Python/Assignment\ 2)
 
 ## File-Tree
 ```
